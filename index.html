@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="circle purple"></div>
+        <div class="circle pink"></div>
+        <div class="circle blue"></div>
+    </div>
+    <div class="container">
+        <h1>Fifi's Tasks...🎀</h1>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add Task</button>
+        <div class="list-container">
+            <div class="list">
+                <h2>TODO</h2>
+                <ul id="todoList"></ul>
+            </div>
+            <div class="list">
+                <h2>DONE</h2>
+                <ul id="doneList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

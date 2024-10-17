@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Permanent+Marker&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Permanent Marker", sans-serif;
+  background-color: #fbc7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.8;
+  animation: move 10s infinite alternate;
+}
+
+/* Motion shii */
+@keyframes move {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(100px, -50px) scale(1.2);
+  }
+  50% {
+    transform: translate(-100px, 50px) scale(1.4);
+  }
+  75% {
+    transform: translate(150px, -100px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.purple {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 30% 30%, #fff, #ff00b7, #6930e3, #000);
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.pink {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at 30% 30%, #fff, #ed4cf0, #d65bc4, #000);
+  bottom: 20%;
+  right: 20%;
+  animation-delay: 3s;
+}
+
+.blue {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle at 30% 30%, #fff, #4f0797, #600fb1, #000);
+  top: 60%;
+  left: 60%;
+  animation-delay: 6s;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(233, 211, 230, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#taskInput {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #e9e3e3;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+button {
+  margin: 10px;
+  padding: 13px;
+  background-color: #ee95d6;
+  color: white;
+  border: none;
+  box-shadow: #000000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c979b4;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.list {
+  width: 48%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+span {
+  flex-grow: 1;
+  word-break: break-word;
+}
